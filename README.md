@@ -20,9 +20,9 @@ This project is a Go-based microservice that uses **gRPC** to expose a `Generate
 
 ---
 
-## How to Run
+### How to Run
 
-### 1. Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/go-grpc-report-service.git
