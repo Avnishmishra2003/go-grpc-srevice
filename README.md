@@ -24,26 +24,25 @@ This project is a Go-based microservice that uses **gRPC** to expose a `Generate
 
 
 
- ** Clone the Repository ** 
+ ## 1. Clone the Repository
 ```bash Or CMD
 git clone https://github.com/your-username/go-grpc-report-service.git
 cd go-grpc-report-service
 
-## Install Dependencies:
+## 2. Install Dependencies:
 go mod tidy
 
-## Generate Go Code from .proto .
+## 3. Generate Go Code from .proto .
 Make sure protoc is installed. Then run:
 
 protoc --go_out=. --go-grpc_out=. proto/report.proto
 /// Note: The .proto file has a go_package option set correctly.
 
-*** Run the Server ***
-
+## 4. Run the Server
 go run main.go
 You should see logs showing that the server is running and cron jobs are generating reports every 10 seconds.
 
-*** Testing the gRPC Service ***
+## 5. Testing the gRPC Service
 We tested all endpoints using CMD and the command-line tool grpcurl.
 
 *** Health Check ***
