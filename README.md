@@ -37,6 +37,8 @@ Make sure protoc is installed. Then run:
 
 protoc --go_out=. --go-grpc_out=. proto/report.proto
 /// Note: The .proto file has a go_package option set correctly.
+option go_package = "go-grpc-report-service/proto;report";
+
 
 ## 4. Run the Server
 go run main.go
